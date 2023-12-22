@@ -380,12 +380,6 @@
 .dialog__text {
   text-transform: uppercase;
   line-height: 150%;
-
-}
-
-.button__text {
-  text-transform: uppercase;
-  mix-blend-mode: difference;
 }
 
 .dialog::backdrop {
@@ -393,7 +387,16 @@
   background: var(--main-color, #000);
 }
 
-
+@supports (
+  (text-stroke: 1px var(--background-color, #fff)) or
+  (-webkit-text-stroke:1px var(--background-color, #fff))
+) {
+  .card__picture-label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--background-color, #fff);
+    text-stroke: 1px var(--background-color, #fff);
+  }
+}
 
 @media (width > 375.3px) {
   .card__title {
