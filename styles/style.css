@@ -25,15 +25,10 @@
   font-family: var(--main-font, 'Inter', sans-serif);
   font-variation-settings: 'wght' var(--font-weight-light-normal, 400);
   font-size: var(--font-size, 18px);
+  background-image: var(--background);
   background-color: var(--background-color, #fff);
-  background-image: repeating-linear-gradient(to left, var(--background-color-0) 0px 2px, transparent 2px 4px), 
-                    repeating-linear-gradient(var(--background-color-0) 0px 2px, transparent 2px 4px), 
-                    linear-gradient(var(--background-color-1) 0.01%, var(--background-color-2));
   background-size: cover;
-  background-position: center;
-  
   background-attachment: fixed;
-  
 }
 
 .header {
